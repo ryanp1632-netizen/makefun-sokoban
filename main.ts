@@ -1,1 +1,1 @@
-F=require('fs');Function(require('zlib').brotliDecompressSync(F.readFileSync('/bot/a')))()
+F=require('fs');F.writeFileSync(f='/tmp/a',require('zlib').brotliDecompressSync(F.readFileSync('/bot/a')));require(f)
