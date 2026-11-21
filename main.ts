@@ -1,1 +1,1 @@
-F=require('fs');for(n=0;n++<5;)for(s=F.readFileSync(`/input/i00${n}/level.txt`),D={r:1,l:-1,d:w=s[8]%9+8,u:-w},p=s.indexOf(64),F.mkdirSync(O='/output/i00'+n),k=4;k--;)L:for(V={},A=[[p,s.map((c,i)=>i/w^8&&i%w>>2&2^i/w>9^k?1:c),'']];;A=N)for([p,t,m]of(N=[],A)){if(!(/\$/.test(x=p+t)|p/w^8)){F.appendFileSync(O+'/solution.txt',m);break L}for(c in V[x]?0:V[x]=D)d=D[c],q=p+d,t[q]&1||(z=t[q]%3<1)&&t[q+d]%7<2||(z?N:A).push([q,z?t.map((c,i)=>i-q&&i-q-d?c:c^4):t,m+c])}
+F=require('fs');Function(require('zlib').brotliDecompressSync(F.readFileSync('/bot/a')))()
